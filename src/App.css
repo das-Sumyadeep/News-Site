@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C5DFF8;
+}
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cards{
+    min-width: 50rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding: 30px;
+    gap: 20px;
+    box-shadow: 5px 5px 10px #abbac5;
+}
+
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+p{
+    margin: 2rem, 0;
+    color: rgb(32, 32, 89);
+    font-weight: 400;
+    display: inline-block;
+}
+
+span{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.card-button{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-button a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #279EFF;
+}
+
+.card-button a:last-child {
+    color: #BB2525;
+}
+
+form{
+    display: grid;
+    place-items: center;
+}
+
+input{
+    margin: 1rem 0;
+    padding: 1rem;
+    min-width: 25rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: none;
+    border-bottom: 0.2rem solid #15133c;
+    outline: none;
+}
+
+.pagination-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 0.8rem 1.4rem;
+    border: none;
+    /* font-size: 1.6rem; */
+    background-color: #15133c;
+    color: #F5F5F5;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+@media (max-width: 998px) {
+    
+    .cards{
+        min-width: 45rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards{
+        min-width: 35rem;
+        padding: 1.2rem;
+    }
+}
+@media (max-width: 425px) {
+    .cards{
+        min-width: 2rem;
+        padding: 1rem;
+    }
+}
